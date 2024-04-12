@@ -1,5 +1,10 @@
-import imageavto from "./assets/images/avtoImage.jpg";
+import { VscSettings } from "react-icons/vsc";
+import imageavto from "./assets/images/image.jpg";
+import Bag from "./components/Bag";
 import Chat from "./components/Chat";
+import ChatSecound from "./components/ChatSecound";
+import Tag from "./components/Tag";
+import { FaChevronRight } from "react-icons/fa";
 
 function App() {
   return (
@@ -7,10 +12,10 @@ function App() {
       <div className="bg-neutral-200 w-full h-auto py-20">
         <div className="w-5/12 h-auto border-l-teal-50  rounded-lg border-4 border-white mx-auto">
           <div className="flex justify-between">
-            {/* header title  */}
+            {/* header component  */}
             <div className="flex items-center justify-between gap-3 w-[300px] bg-neutral-200">
               <img
-                className="rounded-full w-1 flex-1 py-3"
+                className="rounded-full w-1 flex-1 py-3 ml-1"
                 src={imageavto}
                 alt=""
               />
@@ -27,10 +32,82 @@ function App() {
               <h1>online</h1>
             </div>
           </div>
-          <div className="flex justify-between bg-white">
-            {/* header components  */}
+          <div className="bg-white">
+            {/* chatt components  */}
             <div className="flex items-center justify-between gap-3 w-[300px]">
-              <Chat/>
+              <Chat />
+              <div className="pt-72">
+                <ChatSecound />
+              </div>
+            </div>
+            <div className="mt-10 ml-4">
+              <h1 className="text-neutral-500 font-semibold pb-4">
+                Popular tags for handbag
+              </h1>
+              <div className="pb-4">
+                <Tag />
+              </div>
+            </div>
+            <div className="">
+              <Bag />
+            </div>
+            <div className="flex items-center justify-between gap-10 pt-4">
+              <h1 className="text-neutral-500 font-semibold pb-4 ml-4">
+                Select filters
+              </h1>
+              <div className="flex items-center gap-2">
+                <VscSettings className="text-2xl text-neutral-500" />
+                <h1 className="font-semibold mr-2 text-neutral-500">Filter</h1>
+              </div>
+            </div>
+            <div className="flex gap-2 px-4 mt-5 pb-7">
+              <div className="border-blue-300 border-2 rounded-xl px-4 text-blue-400">
+                Strap-Long X
+              </div>
+              <div className="border-blue-300 border-2 rounded-xl  px-2">
+                Colour X
+              </div>
+              <div className="border-blue-300 border-2 rounded-xl  px-2 ">
+                Size X
+              </div>
+              <div className="border-blue-300 border-2 rounded-xl  px-2">
+                Brand X
+              </div>
+              <div className="border-blue-300 border-2 rounded-xl  px-2">
+                Marerial X
+              </div>
+              <div className="border-blue-300 border-2 rounded-xl  px-2">
+                Baggit X
+              </div>
+            </div>
+            <div className="">
+              <div className="flex items-center justify-center">
+                <label className="input input-bordered flex items-center gap-2 pb-3 pt-5 w-9/12">
+                  <input
+                    type="text"
+                    className="grow"
+                    placeholder="Type Your message"
+                  />
+                </label>
+                <div className="bg-blue-500 py-2 rounded-2xl px-3 ml-2">
+                  <FaChevronRight className="text-4xl ml-3 text-center text-white" />
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <h1 className="text-center py-4 text-neutral-500">
+                  Powered by 
+                </h1>
+                <div className="flex items-center gap-1">
+                  <span className="font-bold flex-1 ml-1"> Krunk.ai</span>
+                  <div className="flex-1">
+                    <img
+                      className="w-4 text-neutral-500"
+                      src="https://krunk.ai/static/media/krunk_Logo.0b9a990baf089d421846.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
