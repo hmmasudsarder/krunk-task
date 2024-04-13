@@ -1,4 +1,4 @@
-import { VscSettings } from "react-icons/vsc";
+import { VscSettings, VscVerifiedFilled } from "react-icons/vsc";
 import imageavto from "./assets/images/image.jpg";
 import Bag from "./components/Bag";
 import Chat from "./components/Chat";
@@ -21,7 +21,10 @@ function App() {
               />
               <div className="badge badge-success badge-sm -ml-8 mt-16"></div>
               <div className="flex-1">
-                <h1 className="text-2xl text-blue-500 -mt-4">Timpu</h1>
+                <div className="flex items-center gap-2 mt-4">
+                  <h1 className="text-2xl text-blue-500 -mt-4">Timpu</h1>
+                  <VscVerifiedFilled className="text-orange-400 text-xl" />
+                </div>
                 <p className="font-semibold text-blue-500 w-full mt-1">
                   Chat assistant
                 </p>
@@ -95,7 +98,7 @@ function App() {
               </div>
               <div className="flex items-center justify-center">
                 <h1 className="text-center py-4 text-neutral-500">
-                  Powered by 
+                  Powered by
                 </h1>
                 <div className="flex items-center gap-1">
                   <span className="font-bold flex-1 ml-1"> Krunk.ai</span>
