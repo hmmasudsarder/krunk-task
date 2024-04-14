@@ -9,11 +9,11 @@ import { FaChevronRight } from "react-icons/fa";
 function App() {
   return (
     <div>
-      <div className="bg-neutral-200 w-full h-auto py-20">
+      <div className="bg-amber-100 w-full h-auto py-20">
         <div className="w-5/12 h-auto border-l-teal-50  rounded-lg border-4 border-white mx-auto">
           <div className="flex justify-between">
             {/* header component  */}
-            <div className="flex items-center justify-between gap-3 w-[300px] bg-neutral-200">
+            <div className="flex items-center justify-between gap-3 w-[300px] bg-amber-100">
               <img
                 className="rounded-full w-1 flex-1 py-3 ml-1"
                 src={imageavto}

@@ -6,7 +6,7 @@ const Bag = () => {
   return (
     <div className="pt-10">
       <div className="w-[340px]">
-        <div className="alert bg-red-100 ml-4 flex flex-col">
+        <div className="alert bg-amber-100 ml-4 flex flex-col">
           <div className="w-[220px] bg-white h-10">
             <div className="flex items-center justify-between -ml-10 gap-1 w-[300px] h-24 bg-white rounded-lg">
               <div className="w-[90px]">
